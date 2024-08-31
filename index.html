@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/While JavaScript Hoosier Lottery Numbers</title>
+</head>
+<body>
+    
+    <h2>Winning Lottery Numbers!</h2>
+
+    <h3 class="numbers"></h3>
+
+    <h3 class="numbersTwo"></h3>
+
+    
+</body>
+<script>
+    let seperate = "For Loop";
+    console.log(seperate);
+
+    let display = document.querySelector(".numbers");
+    const UPPER_LIMIT=6;
+    
+
+    // For Loop 
+
+    let str = "";
+
+    for (let index = 0; index<UPPER_LIMIT; index++){
+        let randomNum = Math.floor(Math.random() * 50);
+        let str = `${randomNum}<br>`;
+        console.log(randomNum);
+        
+
+    };
+
+    display.innerHTML = str;
+
+    let seperateTwo = "While Loop";
+    console.log(seperateTwo);
+
+    //While Loop 
+
+    let displayTwo = document.querySelector(".numbersTwo");
+
+    let strTwo = "";
+
+    let num = 0;
+
+    while (num < UPPER_LIMIT){
+        let randomNum = Math.floor(Math.random() * 50);
+        let strTwo = `${randomNum}<br>`;
+        console.log(randomNum);
+        num += 1
+
+    };
+    
+    display.innerHTML = strTwo;
+
+</script>
+</html>
